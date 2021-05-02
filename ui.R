@@ -175,7 +175,7 @@ shinyUI(fluidPage(theme = "bootstrap.css",
            sliderInput("ort", label = "Ort",
                        min = -7, max = 7, value = 0),
            sliderInput("sterne", label = "Sterne",
-                       min = -7, max = 7, value = 0),
+                       min = -7, max = 3, value = 0),
            fluidRow(
              column(6,
                      checkboxInput("bannschwert", label = "Bannschwert", value = FALSE)
