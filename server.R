@@ -1,8 +1,8 @@
 #dataframes
 
 dienste <<- c("Beratung","Bereitstellung besonderer Fähigkeiten","Diebstahl","Kampf","Körperliche Hilfe","Lastentransport","Schutz","Suche","Spionage","Personentransport","Wache","Keiner")
-fähigkeiten <<- c("Keine","Astralsinn","Besonderer Angriff","Folgeschaden","Formlosigkeit I","Formlosigkeit II","Fortpflanzungsfähigkeit","Lebenssinn","Regeneration I","Regeneration II","Resistenz gegen profane Angriffe","Resistenz gegen [Merkmal]","Immunität gegen profane Angriffe","Immunität gegen [MERKMAL]","Schreckgestalt I","Suche nach Unbek.","Verbindung zum Beschwörer","Verwundbarkeit","Wasserwesen","Zusätzliche Aktion")
-fähigkeiten_kosten <<- c(0,5,2,4,4,7,12,4,4,7,5,5,10,10,4,7,5,0,0,9)
+fähigkeiten <<- c("Keine","Astralsinn","Besonderer Angriff","Folgeschaden","Formlosigkeit I","Fortpflanzungsfähigkeit","Lebenssinn","Regeneration I","Regeneration II","Resistenz gegen profane Angriffe","Resistenz gegen [Merkmal]","Immunität gegen profane Angriffe","Immunität gegen [MERKMAL]","Schreckgestalt I","Suche nach Unbek.","Verbindung zum Beschwörer","Verwundbarkeit","Wasserwesen","Zusätzliche Aktion")
+fähigkeiten_kosten <<- c(0,5,2,4,4,12,4,4,7,5,5,10,10,4,7,5,0,0,9)
 material_names <<- c("Holz", "Stein", "Lehm", "Metall", "Sand")
 größe_names <<- c("Winziger","Sehr kleiner","Kleiner","Mittelgroßer","Großer","Sehr großer")
 größe_dk <<- c("H", "H", "HN", "HN", "NS", "NS")
@@ -378,7 +378,7 @@ shinyServer(function(input, output) {
   })
   
   gift_erschwernis <- reactive({
-    round((if(input$gift == TRUE){1}else{0})*(if(input$giftart == 1){0.5}else if(input$giftart == 1){1}else{2})*input$giftstufe)
+    round((if(input$gift == TRUE){1}else{0})*(if(input$giftart == 1){0.5}else if(input$giftart == 2){1}else{2})*input$giftstufe)
   })
   
   gesamterschwernis <- reactive({

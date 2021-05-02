@@ -2,7 +2,7 @@
 library(shiny)
 
 dienste <- list("Beratung" = 1, "Bereitst. bes. Fähigk." = 2, "Diebstahl" = 3, "Kampf" = 4, "Körperliche Hilfe" = 5, "Lastentransport" = 6, "Schutz" = 7, "Suche" = 8, "Spionage" = 9, "Personentransport" = 10, "Wache" = 11, "Keiner" = 12)
-fähigkeiten <- list("Keine" = 1, "Astralsinn" = 2, "Bes. Angriff" = 3, "Folgeschaden" = 4, "Formlosigkeit I" = 5, "Formlosigkeit II" = 6, "Fortpflanzungsfähigk." = 7, "Lebenssinn" = 8, "Regeneration I" = 9, "Regeneration II" = 10, "Resistenz gegen profane Angriffe" = 11, "Resistenz gegen [MERKMAL]" = 12, "Immunität gegen profane Angriffe" = 13, "Immunität gegen [MERKMAL]" = 14, "Schreckgestalt I" = 15, "Suche nach Unbek." = 16, "Verb. zum Beschw." = 17, "Verwundbarkeit" = 18, "Wasserwesen" = 19, "Zus. Aktion" = 20)
+fähigkeiten <- list("Keine" = 1, "Astralsinn" = 2, "Bes. Angriff" = 3, "Folgeschaden" = 4, "Formlosigkeit I" = 5, "Fortpflanzungsfähigk." = 6, "Lebenssinn" = 7, "Regeneration I" = 8, "Regeneration II" = 9, "Resistenz gegen profane Angriffe" = 10, "Resistenz gegen [MERKMAL]" = 11, "Immunität gegen profane Angriffe" = 12, "Immunität gegen [MERKMAL]" = 13, "Schreckgestalt I" = 14, "Suche nach Unbek." = 15, "Verb. zum Beschw." = 16, "Verwundbarkeit" = 17, "Wasserwesen" = 18, "Zus. Aktion" = 19)
 
 shinyUI(fluidPage(theme = "bootstrap.css",
 
