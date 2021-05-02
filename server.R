@@ -45,7 +45,7 @@ shinyServer(function(input, output) {
     val$wertesteigerung[12] = val$wertesteigerung[12]+1
   }) 
   
-  observeEvent(input$int_plus, {
+  observeEvent(input$in_plus, {
     val$erschwernis = val$erschwernis +2
     val$wertesteigerung[13] = val$wertesteigerung[13]+1
   }) 
@@ -89,7 +89,7 @@ shinyServer(function(input, output) {
     }
     }) 
   
-  observeEvent(input$int_minus, {
+  observeEvent(input$in_minus, {
     if (val$wertesteigerung[13] > 0) {
       val$erschwernis = val$erschwernis -2
       val$wertesteigerung[13] = val$wertesteigerung[13]-1
