@@ -2,7 +2,7 @@
 
 dienste <<- c("Beratung","Bereitstellung besonderer Fähigkeiten","Diebstahl","Kampf","Körperliche Hilfe","Lastentransport","Schutz","Suche","Spionage","Personentransport","Wache","Keiner")
 fähigkeiten <<- c("Keine","Astralsinn","Besonderer Angriff","Folgeschaden","Formlosigkeit I","Formlosigkeit II","Fortpflanzungsfähigkeit","Lebenssinn","Regeneration I","Regeneration II","Resistenz gegen profane Angriffe","Resistenz gegen [Merkmal]","Immunität gegen profane Angriffe","Immunität gegen [MERKMAL]","Schreckgestalt I","Suche nach Unbek.","Verbindung zum Beschwörer","Verwundbarkeit","Wasserwesen","Zusätzliche Aktion")
-fähigkeiten_kosten <<- c(0,5,2,4,4,7,12,4,4,7,5,5,10,10,4,7,5,0,9)
+fähigkeiten_kosten <<- c(0,5,2,4,4,7,12,4,4,7,5,5,10,10,4,7,5,0,0,9)
 material_names <<- c("Holz", "Stein", "Lehm", "Metall", "Sand")
 größe_names <<- c("Winziger","Sehr kleiner","Kleiner","Mittelgroßer","Großer","Sehr großer")
 größe_dk <<- c("H", "H", "HN", "HN", "NS", "NS")
